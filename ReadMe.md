@@ -75,11 +75,11 @@ SingletonClass s3 = new SingletonClass();
 > This design pattern is all about dynamic object creation. We create objects dynamically based on a parameter in the run-time.
 - We have to have an interface and a Family of classes extended from that interface.
 ```
-public interface Operation ()  {}
-public class AddOperation implements Operation () {}
-public class SubOperation implements Operation () {}
-public class MulOperation implements Operation () {}
-public class DivOperation implements Operation () {}
+public interface Operation {}
+public class AddOperation implements Operation {}
+public class SubOperation implements Operation {}
+public class MulOperation implements Operation {}
+public class DivOperation implements Operation {}
 ```
 - Then we can use dependency inversion principle to create the Factory design pattern.
 - Here we decide from which specific class that the object will get instantiated in the run-time.
@@ -125,13 +125,13 @@ public class DivOperation implements Operation () {}
    - When we write this using OOP we need to have separate classes for each of those shapes / categories.
    - But we might need to have variations/combination of these shapes / categories like red boarder circle, red square, transparent triangle, dotted border rectangle  etc.
    - There are like thousands of combinations we can have like above.
-   - So, having to create single class for each combination is we will end up with lot of classes.
+   - So, having to create single class for each combination is we will end up with a lot of classes.
     ```
-   public class Cicle () {}
-   public class RedBorderCircle extends Circle () {}
-   public class TransparentCircle extends Circle () {}
-   public class RedCircle extends Circle () {}
-   public class DottedBorderCircle extends Circle () {}
+   public class Cicle {}
+   public class RedBorderCircle extends Circle {}
+   public class TransparentCircle extends Circle {}
+   public class RedCircle extends Circle {}
+   public class DottedBorderCircle extends Circle {}
     ```
 2. 
    - Assume that we are creating a software for a pizza company.
@@ -141,7 +141,7 @@ public class DivOperation implements Operation () {}
 
 > If we create classes for categories like circle , triangle , pizza and initialize basic objects from them.
 > 
-> Then, what if there is a way to add this combinations / variations by adding thing like borders, colors, flavours, toppings to this basic objects dynamically at run time, the code will be much cleaner and maintainable. 
+> Then, what if there is a way to add these combinations / variations by adding thing like borders, colors, flavours, toppings to this basic objects dynamically at run time, the code will be much cleaner and maintainable. 
 
 ### How to implement decorator ?
 - We can have a decorator class like ShapeDecorator() that will shape objects at runtime.
@@ -151,13 +151,13 @@ public class DivOperation implements Operation () {}
 ```
 public interface Shape ()
 
-public class Cicle implements shape () {}
-public class Triangle implements shape() {}
+public class Cicle implements shape {}
+public class Triangle implements shape {}
 
-public class ShapeDecorator implements shape() {}
+public class ShapeDecorator implements shape {}
 
-public class BorderDecorator extends ShapeDecorator() {}
-public class ColorDecorator extends ShapeDecorator() {}
+public class BorderDecorator extends ShapeDecorator {}
+public class ColorDecorator extends ShapeDecorator {}
 ```
 
 ---
