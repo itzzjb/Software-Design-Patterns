@@ -127,11 +127,11 @@ public class DivOperation implements Operation () {}
    - There are like thousands of combinations we can have like above.
    - So, having to create single class for each combination is we will end up with lot of classes.
     ```
-   cicle()
-   red border circle()
-   transparent circle()
-   red circle()
-   dotted border circle()
+   public class Cicle () {}
+   public class RedBorderCircle extends Circle () {}
+   public class TransparentCircle extends Circle () {}
+   public class RedCircle extends Circle () {}
+   public class DottedBorderCircle extends Circle () {}
     ```
 2. 
    - Assume that we are creating a software for a pizza company.
@@ -149,15 +149,15 @@ public class DivOperation implements Operation () {}
 - And then we can create different decorator classes by extending the ShapeDecorator class like BorderDecorator, ColorDecorator etc. 
 
 ```
-interface Shape ()
+public interface Shape ()
 
-class Cicle implements shape ()
-class Triangle implements shape()
+public class Cicle implements shape () {}
+public class Triangle implements shape() {}
 
-class ShapeDecorator implements shape()
+public class ShapeDecorator implements shape() {}
 
-class BorderDecorator extends ShapeDecorator()
-class ColorDecorator extends ShapeDecorator()
+public class BorderDecorator extends ShapeDecorator() {}
+public class ColorDecorator extends ShapeDecorator() {}
 ```
 
 ---
