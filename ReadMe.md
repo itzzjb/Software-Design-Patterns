@@ -72,8 +72,7 @@ SingletonClass s3 = new SingletonClass();
 
 ---
 # Factory Design Pattern
-- This design pattern is all about dynamic object creation.
-- We create objects dynamically based on a parameter.
+> This design pattern is all about dynamic object creation. We create objects dynamically based on a parameter in the run-time.
 - We have to have a interface and a Family of classes extended from that interface.
 ```
 public interface Operation ()  {}
@@ -87,4 +86,29 @@ public class DivOperation implements Operation () {}
 - Note that the parameter will be given at the run-time. 
   - Either via Command Line Arguments or Reading from console. 
 - Here also we have the method name as getInstance().
-- 
+
+---
+
+# Adaptor Design Pattern
+
+### Real World Examples
+- There are many types of plugs we use in day today life. 
+- Inorder to the connect the plug with the electricity we need a socket, that is as same as the type of the plug.
+- Otherwise we couldn't plug it in to the socket.
+- In that kind of situations, we use Adaptors convert a one plug into another type of a plug.
+- This is a one real life use of Adaptor patter. (One in the middle who converts one into another.)
+- Another example is cable adaptors. ( Usb type C -> HDMI Convertor )
+
+### Adaptor Pattern use cases in the Software world
+1. Mostly, we use adaptor pattern when we have to use a incompatible code.
+   - Let's say we are building a project that we have built into a certain extend, and we have to implement a new feature / requirement. 
+   - But for that requirement someone else already wrote a code, and you found in the internet.
+   - But when we are going to use that in our project, that might not be compatible with our existing structure.
+   - Inorder to get that code into our project, we might need to create a Adaptor to make those 2 compatible.
+   - So , this adaptor pattern comes in handy, when we're trying to implement libraries written by others to out project.
+2. Also when we try to connect into external systems via APIs we use Adaptors.
+3. When we try to connect to a database we use database adaptors.
+
+> Adaptor is a any class that can do some kind of a conversion.
+> 
+---
