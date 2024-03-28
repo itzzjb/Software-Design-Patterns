@@ -149,7 +149,7 @@ public class DivOperation implements Operation {}
 - And then we can create different decorator classes by extending the ShapeDecorator class like BorderDecorator, ColorDecorator etc. 
 
 ```
-public interface Shape ()
+public interface Shape () {}
 
 public class Cicle implements shape {}
 public class Triangle implements shape {}
@@ -161,3 +161,27 @@ public class ColorDecorator extends ShapeDecorator {}
 ```
 
 ---
+# Observer Design Pattern
+- Mostly used in situations we use Publisher Subscriber mode.
+- We do some work based on Events happen.
+- Usually We have a certain class called Subject class that initiates events. (Subject is the class that do the co-ordination)
+> Publishers are usually called as Subject.
+- Other classes will do their work answering to the event.
+- Subject calls subscribers and let them know about new events. 
+> Subscribers are usually called as Observers.
+- When there is an event happen in Subject All the Observers will be notified. (MouseClick) Then Observers will execute whatever the relevant action we programmed it to do so.
+- There are different types of Subscribers.
+- We can classify these types of observers on how they perform when they receive an event.
+- Subject should have list of observers. We can implement that using a dynamic array.
+- The array size should be dynamic because you should be able to subscribe and unsubscribe at the runtime. So items will be inserted and removes from the array at runtime.
+- The observers should be able to add them into the list by subscribing and remove themselves from the list by unsubscribing.
+
+### Real World Example
+- If we are developing a software for a newspaper agency, the newspaper agency is the Subject / Publisher.
+- People who read the newspapers are the Observers.
+- There are different types of observers here.
+  - Some Subscribers / Observers, only reads the front page.
+  - Some Subscribers / Observers, they will read the entire newspaper.
+  - Some Subscribers / Observers, they won't read the newspaper at all.
+  - etc. 
+- The newspaper agency has a list of subscribers. Based on that they will know for which addresses the newspapers need to send to.
