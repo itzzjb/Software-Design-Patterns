@@ -1,7 +1,7 @@
 package adaptor;
 
-import adaptor.ImageViewerExternal.impl.JpegImageViewer;
-import adaptor.ImageViewerExternal.impl.PngImageViewer;
+import adaptor.imageViewerExternal.impl.JpegImageViewer;
+import adaptor.imageViewerExternal.impl.PngImageViewer;
 import adaptor.impl.ImageAdaptor;
 import adaptor.impl.MP3MediaPlayer;
 import adaptor.impl.MP4MediaPlayer;

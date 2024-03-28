@@ -14,7 +14,7 @@
 - Helps to come up with a good code structure ( Good class hierarchy ).
 - Extensibility of the code will be increased. ( Easy to add / plugin new requirements to the system without breaking other systems )
 - There are industry specific we use in companies. So using Design pattens will help us to communicate with other developers easily.
-  - "I used observerDemo pattern to build this code."
+  - "I used observer.observerDemo pattern to build this code."
 
 ### Mistakes made when using Design Patterns
 - Using the wrong design pattern

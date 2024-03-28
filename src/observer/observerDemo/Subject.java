@@ -1,4 +1,4 @@
-package observerDemo;
+package observer.observerDemo;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -11,13 +11,13 @@ public class Subject {
 
     // Whatever the Observer coming as a parameter here will be added to the Array
     // Subscribing ...
-    public void register(Observer observer) {
+    public void registerObserver(Observer observer) {
         observerList.add(observer);
     }
 
     // Whatever the Observer coming as a parameter here will be removed from the Array
     // Unsubscribing...
-    public void remove(Observer observer) {
+    public void removeObserver(Observer observer) {
         observerList.remove(observer);
     }
 

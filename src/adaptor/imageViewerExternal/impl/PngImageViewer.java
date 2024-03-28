@@ -1,6 +1,6 @@
-package adaptor.ImageViewerExternal.impl;
+package adaptor.imageViewerExternal.impl;
 
-import adaptor.ImageViewerExternal.ImageViewer;
+import adaptor.imageViewerExternal.ImageViewer;
 
 public class PngImageViewer implements ImageViewer {
 

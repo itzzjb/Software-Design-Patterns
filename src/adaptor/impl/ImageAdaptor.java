@@ -1,6 +1,6 @@
 package adaptor.impl;
 
-import adaptor.ImageViewerExternal.ImageViewer;
+import adaptor.imageViewerExternal.ImageViewer;
 import adaptor.MediaPlayer;
 
 public class ImageAdaptor implements MediaPlayer {

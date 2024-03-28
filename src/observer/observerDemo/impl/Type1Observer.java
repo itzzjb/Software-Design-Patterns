@@ -1,6 +1,6 @@
-package observerDemo.impl;
+package observer.observerDemo.impl;
 
-import observerDemo.Observer;
+import observer.observerDemo.Observer;
 
 public class Type1Observer implements Observer {
     @Override
