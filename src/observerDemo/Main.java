@@ -11,7 +11,7 @@ public class Main {
         Observer observer2 = new Type2Observer();
         Observer observer3 = new Type2Observer();
 
-        // Creating a instance of the Subject
+        // Creating an instance of the Subject
         Subject subject = new Subject();
 
         // Subscribing the Observers
