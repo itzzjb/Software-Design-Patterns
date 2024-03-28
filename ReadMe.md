@@ -26,7 +26,7 @@
 - Having peer reviews (It is recommended in the industry get your code reviewed by a colleagues / seniors of a team members when you write a code )
 
 ### Some of Object Oriented Design patterns 
-- singleton Design Pattern
+- Singleton Design Pattern
 - Factory Design Pattern
 - Decorator Design Pattern
 - Observer Design Pattern
@@ -72,3 +72,19 @@ SingletonClass s3 = new SingletonClass();
 
 ---
 # Factory Design Pattern
+- This design pattern is all about dynamic object creation.
+- We create objects dynamically based on a parameter.
+- We have to have a interface and a Family of classes extended from that interface.
+```
+public interface Operation ()  {}
+public class AddOperation implements Operation () {}
+public class SubOperation implements Operation () {}
+public class MulOperation implements Operation () {}
+public class DivOperation implements Operation () {}
+```
+- Then we can use dependency inversion principle to create the Factory design pattern.
+- Here we decide from which specific class that the object will get instantiated in the run-time.
+- Note that the parameter will be given at the run-time. 
+  - Either via Command Line Arguments or Reading from console. 
+- Here also we have the method name as getInstance().
+- 
